@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="page-wrap">
+    {{ partial "header.html" . }}
+
+    <main class="content-wrap">
+      <aside class="sidebar">
+        {{ partial "sidebar.html" . }}
+      </aside>
+
+      <section class="content">
+        {{ block "main" . }}{{ end }}
+      </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

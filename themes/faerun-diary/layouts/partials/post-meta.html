@@ -1,0 +1,9 @@
+<p class="post-meta">
+  <span class="meta-item">✎ {{ .Date.Format "02 Mar 2006" }}</span>
+  {{ with .Params.location }}
+    <span class="meta-item">📍 {{ . }}</span>
+  {{ end }}
+  {{ with .Params.level }}
+    <span class="meta-item">⚔ Retired at level {{ . }}</span>
+  {{ end }}
+</p>

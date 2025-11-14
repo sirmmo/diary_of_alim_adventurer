@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="entry">
+  <header>
+    <p class="entry-label">Field Report</p>
+    <h1 class="entry-title">{{ .Title }}</h1>
+    {{ partial "post-meta.html" . }}
+  </header>
+
+  <div class="entry-body">
+    {{ .Content }}
+  </div>
+
+  <footer class="entry-footer">
+  </footer>
+
+  <nav class="entry-nav">
+    {{ with .PrevInSection }}<a class="prev" href="{{ .RelPermalink }}">← Previous entry</a>{{ end }}
+    {{ with .NextInSection }}<a class="next" href="{{ .RelPermalink }}">Next entry →</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

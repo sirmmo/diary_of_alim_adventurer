@@ -1,0 +1,9 @@
+
+baseURL = "https://example.com/"
+title = "Diary of Elim Kors, Adventurer"
+theme = "faerun-diary"
+
+
+[params]
+  retiredName = "Elim Kors"
+  favicon = "/img/compass.svg"

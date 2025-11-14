@@ -1,0 +1,12 @@
+{{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  {{ if .IsHome }}
+    The Retired Adventurer's Diary – Tales from Faerûn
+  {{ else }}
+    {{ .Title }} – The Retired Adventurer's Diary
+  {{ end }}
+</title>
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">{{ end }}

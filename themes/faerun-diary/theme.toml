@@ -1,0 +1,8 @@
+name = "faerun-diary"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A parchment-and-ink story-driven Hugo theme for a retired Faerûnian adventurer's diary."
+min_version = "0.120.0"
+
+[author]
+  name = "You"

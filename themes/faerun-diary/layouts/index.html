@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="intro">
+    <h2>On the Road No More</h2>
+    <p>
+      I have traded dungeons for decent tea. These are the recollections, regrets, and half-remembered legends
+      of a life spent wandering Faerûn. I write them down before ale and age finish the rest.
+    </p>
+  </section>
+
+  <section class="post-list">
+    <h2>Latest Entries</h2>
+    {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+      <article class="post-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ partial "post-meta.html" . }}
+        <p>{{ .Summary }}</p>
+      </article>
+    {{ else }}
+      <p>No tales inked yet. The quill waits.</p>
+    {{ end }}
+  </section>
+{{ end }}

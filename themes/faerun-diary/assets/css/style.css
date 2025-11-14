@@ -1,0 +1,272 @@
+:root {
+  --bg: #18120b;
+  --parchment: #f6f0e4;
+  --ink: #2b2116;
+  --accent: #b8860b;
+  --accent-soft: #e0c28a;
+  --muted: #7a6a4a;
+  --max-width: 980px;
+  --radius: 18px;
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.35);
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Georgia", "Garamond", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrap {
+  background: var(--parchment);
+  background-image: url("/img/parchment-texture.jpg");
+  background-size: cover;
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 24px 26px 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0,0,0,0.35);
+}
+
+/* Header */
+
+.site-header {
+  border-bottom: 1px solid rgba(0,0,0,0.18);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.site-title-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wax-seal {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+  font-size: 18px;
+}
+
+.site-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 22px;
+}
+
+.site-subtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.top-nav {
+  margin-top: 8px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--ink);
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.top-nav a:hover {
+  border-color: var(--accent-soft);
+  background: rgba(255,255,255,0.4);
+}
+
+/* Layout */
+
+.content-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(180px, 0.9fr);
+  gap: 18px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 12px;
+  }
+  .page-wrap {
+    padding: 16px;
+  }
+  .content-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sidebar */
+
+.sidebar {
+  font-size: 11px;
+  border-left: 1px solid rgba(0,0,0,0.15);
+  padding-left: 10px;
+}
+
+.sidebar-section + .sidebar-section {
+  margin-top: 10px;
+}
+
+.sidebar h3 {
+  margin: 0 0 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1px 0;
+}
+
+.sidebar a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Posts */
+
+.intro h2,
+.post-list h2,
+.entry-title,
+.list-intro h2 {
+  font-family: var(--font-display);
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-card {
+  padding: 8px 9px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.post-card h3,
+.post-card h2 {
+  margin: 0 0 2px;
+  font-size: 15px;
+}
+
+.post-card p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.post-meta {
+  margin: 0;
+  font-size: 10px;
+  color: var(--muted);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Single Entry */
+
+.entry-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 0 0 2px;
+}
+
+.entry-title {
+  margin: 0 0 4px;
+  font-size: 21px;
+}
+
+.entry-body {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.entry-body p {
+  margin: 0 0 8px;
+}
+
+.entry-body em {
+  font-style: italic;
+}
+
+.entry-footer {
+  margin-top: 10px;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.entry-nav {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.entry-nav a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.entry-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0,0,0,0.18);
+  font-size: 9px;
+  color: var(--muted);
+  text-align: right;
+}

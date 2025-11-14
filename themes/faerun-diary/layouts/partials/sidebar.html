@@ -1,0 +1,19 @@
+<div class="sidebar-section">
+  <h3>Legend</h3>
+  <p>World: <strong>Faerûn</strong></p>
+  {{ with .Site.Params.retiredName }}
+    <p>Author: <strong>{{ . }}</strong></p>
+  {{ else }}
+    <p>Author: <strong>Unnamed, Allegedly Retired</strong></p>
+  {{ end }}
+</div>
+
+<div class="sidebar-section">
+  <h3>Recent Entries</h3>
+  <ul>
+    {{ range first 7 (where .Site.RegularPages "Section" "posts") }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+

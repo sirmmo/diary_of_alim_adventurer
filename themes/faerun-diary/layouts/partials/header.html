@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="site-title-block">
+    <div class="wax-seal">
+      <span>✥</span>
+    </div>
+    <div>
+      <h1 class="site-title">
+        {{ .Site.Title | default "The Retired Adventurer's Diary" }}
+      </h1>
+      <p class="site-subtitle">
+        Field notes of a worn-out hero wandering Faerûn instead of fighting in it.
+      </p>
+    </div>
+  </div>
+
+  <nav class="top-nav">
+    <a href="{{ .Site.BaseURL }}">Front Page</a>
+    {{ with .Site.GetPage "section" "posts" }}<a href="{{ .RelPermalink }}">All Entries</a>{{ end }}
+    {{ with .Site.GetPage "section" "lore" }}<a href="{{ .RelPermalink }}">Lore & Places</a>{{ end }}
+    {{ with .Site.GetPage "section" "about" }}<a href="{{ .RelPermalink }}">About the Old Fool</a>{{ end }}
+  </nav>
+</header>
