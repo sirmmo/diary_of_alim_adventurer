@@ -1,5 +1,5 @@
 ---
-title: "The memories still linger vividly in my mind, as if the events transpired just yesterday. It was a peculiar affair, one that involved a half-daemon, an ancient relic, and a tangled web of intrigue that could have only unraveled in the city of Silverymoon. As I sit here, sipping tea in my cozy abode, surrounded by the city's gentle bustle, I'm reminded of the adventures that have shaped my life."
+title: ""
 meta_title: "The memories still linger vividly in my mind, as if the events transpired just yesterday. It was a peculiar affair, one that involved a half-daemon, an ancient relic, and a tangled web of intrigue that could have only unraveled in the city of Silverymoon. As I sit here, sipping tea in my cozy abode, surrounded by the city's gentle bustle, I'm reminded of the adventures that have shaped my life."
 description: ""
 date: 2025-11-13T19:12:16.860-05:00
