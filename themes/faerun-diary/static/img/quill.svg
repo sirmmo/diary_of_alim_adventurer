@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  aria-labelledby="title desc"
+  role="img">
+  <title>Quill</title>
+  <desc>A stylized quill for a diary or writing theme.</desc>
+
+  <!-- Feather -->
+  <path
+    d="M102 14
+       C82 16 60 34 46 56
+       C34 76 24 100 24 114
+       C40 112 62 94 78 72
+       C92 52 100 30 102 14 Z"
+    fill="#f6f0e4"
+    stroke="#2b2116"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+
+  <!-- Feather center vein -->
+  <path
+    d="M100 16
+       C72 30 48 78 26 114"
+    stroke="#7a6a4a"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- Small fibers -->
+  <g stroke="#7a6a4a" stroke-width="1.2" stroke-linecap="round">
+    <line x1="76" y1="38" x2="88" y2="30"/>
+    <line x1="62" y1="60" x2="74" y2="52"/>
+    <line x1="48" y1="82" x2="60" y2="74"/>
+  </g>
+
+  <!-- Quill tip -->
+  <path
+    d="M22 118
+       L28 112
+       L34 118
+       Z"
+    fill="#2b2116"
+  />
+</svg>

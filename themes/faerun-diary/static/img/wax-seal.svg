@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  aria-labelledby="title desc"
+  role="img">
+  <title>Wax Seal</title>
+  <desc>A stylized wax seal with a sigil.</desc>
+
+  <!-- Base blob -->
+  <path
+    d="M64 8
+       C92 10 116 28 120 56
+       C124 82 108 112 80 118
+       C50 124 22 110 12 84
+       C2 56 22 18 54 10
+       Z"
+    fill="#b02e25"
+    stroke="#7a1915"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner shine -->
+  <path
+    d="M42 34
+       C58 26 84 30 96 48
+       C108 66 98 92 78 98
+       C54 106 30 88 30 62
+       C30 48 34 38 42 34
+       Z"
+    fill="#d0493b"
+    opacity="0.55"
+  />
+
+  <!-- Inner depression circle -->
+  <circle cx="64" cy="64" r="26"
+          fill="#a3271f"
+          stroke="#7a1915"
+          stroke-width="2"/>
+
+  <!-- Sigil -->
+  <text x="64" y="68"
+        text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="26"
+        fill="#f6f0e4">✥</text>
+</svg>
